@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Suwit Jawa</title>
+  </head>
+  <style>
+    #computer {
+      border: 3px black solid;
+      height: 300px;
+      width: 600px;
+      margin: 25 auto;
+      background-color: aqua;
+    }
+
+    #player {
+      border: 3px black solid;
+      height: 300px;
+      width: 600px;
+      margin: 25 auto;
+      background-color: aquamarine;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+
+      padding-top: auto;
+      padding-left: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 18px;
+    }
+
+    img {
+      width: 130px;
+      height: 130px;
+      display: block;
+      margin: auto;
+      border: 5px black solid;
+      border-radius: 50%;
+    }
+
+    #gajah,
+    #orang,
+    #semut {
+      transition: 0.3s;
+      position: relative;
+      top: 0;
+      cursor: pointer;
+    }
+
+    #gajah:hover,
+    #semut:hover,
+    #orang:hover,
+    #active {
+      box-shadow: 0 0 10px 5px limegreen;
+    }
+
+    #gajah:active,
+    #semut:active,
+    #orang:active {
+      top: 2px;
+    }
+
+    #info {
+      margin: 25px auto;
+      width: 300px;
+      height: 60px;
+      line-height: 60px;
+      border: 5px solid salmon;
+      background-color: white;
+      border-radius: 30px;
+      text-align: center;
+      color: #f89bb4;
+      font-size: 26px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    #skorplayer,
+    #skorkomputer {
+      margin: 25px auto;
+      width: 150px;
+      height: 60px;
+      line-height: 60px;
+      border: 5px solid salmon;
+      background-color: white;
+      border-radius: 30px;
+      text-align: center;
+      color: #f89bb4;
+      font-size: 26px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <body>
+    <h1>SUWIT JAWA</h1>
+    <div id="player">
+      <h3>PILIH</h3>
+      <ul>
+        <li>
+          <img id="gajah" src="gajah.png" />
+        </li>
+        <li>
+          <img src="orang.png" id="orang" />
+        </li>
+        <li>
+          <img src="semut.png" id="semut" />
+        </li>
+      </ul>
+    </div>
+    <div id="skorplayer"></div>
+    <div id="info"></div>
+    <div id="skorkomputer"></div>
+    <div id="computer">
+      <h3>COMPUTER</h3>
+      <img src="tanya.png" id="gambarkomputer" />
+    </div>
+
+    <script src="suwitjawa.js"></script>
+  </body>
+</html>
